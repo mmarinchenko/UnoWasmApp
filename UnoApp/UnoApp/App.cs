@@ -1,3 +1,5 @@
+using Uno.Extensions;
+
 namespace UnoApp;
 
 public class App : Application
@@ -5,7 +7,7 @@ public class App : Application
     private static Window? _window;
     public static IHost? Host { get; private set; }
 
-    protected async override void OnLaunched(LaunchActivatedEventArgs args)
+    protected override async void OnLaunched(LaunchActivatedEventArgs args)
     {
         var builder = this.CreateBuilder(args)
 
@@ -13,8 +15,8 @@ public class App : Application
             .UseToolkitNavigation()
             .Configure(host => host
 #if DEBUG
-				// Switch to Development environment when running in DEBUG
-				.UseEnvironment(Environments.Development)
+                // Switch to Development environment when running in DEBUG
+                .UseEnvironment(Environments.Development)
 #endif
                 .ConfigureServices((context, services) =>
                 {

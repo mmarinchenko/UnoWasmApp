@@ -9,7 +9,7 @@
 	<ItemGroup>
 		<PackageReference Include="Uno.WinUI" Version="4.8.33" />
 		<PackageReference Include="Uno.Resizetizer" Version="1.0.4" />
-		<PackageReference Include="Uno.Toolkit.WinUI" Version="2.5.5" />
+		<PackageReference Include="Uno.Toolkit.WinUI" Version="2.5.8" />
 		<PackageReference Include="Uno.Extensions.Hosting.WinUI" Version="2.3.10" />
 		<PackageReference Include="Uno.Extensions.Navigation.Toolkit.WinUI" Version="2.3.10" />
 		<PackageReference Include="Uno.Extensions.Navigation.WinUI" Version="2.3.10" />
@@ -23,13 +23,12 @@
 		<Compile Update="**\*.xaml.cs">
 			<DependentUpon>%(Filename)</DependentUpon>
 		</Compile>
-		<PRIResource Include ="**\*.resw" />
+		<PRIResource Include="**\*.resw" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<UnoImage Include="Assets\**\*.svg" />
-		<Compile Include="..\UnoApp.Base\IsExternalInit.cs"
-						 Visible="false" />
+		<Compile Include="..\UnoApp.Base\IsExternalInit.cs" Visible="false" />
 		<UpToDateCheckInput Include="**\*.xaml" Exclude="bin\**\*.xaml;obj\**\*.xaml" />
 	</ItemGroup>
 </Project>
