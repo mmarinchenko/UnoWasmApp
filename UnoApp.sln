@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33627.172
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnoApp", "UnoApp\UnoApp\UnoApp.csproj", "{ECBE493D-A3BF-4F85-8715-C52431D417A0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Platforms", "Platforms", "{1187CB71-276E-4C40-9450-0A8A6541DAE9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnoApp.Wasm", "UnoApp\UnoApp.Wasm\UnoApp.Wasm.csproj", "{6D9D5AA6-440A-41C9-A110-D6890E3C5B4F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ECBE493D-A3BF-4F85-8715-C52431D417A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECBE493D-A3BF-4F85-8715-C52431D417A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECBE493D-A3BF-4F85-8715-C52431D417A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECBE493D-A3BF-4F85-8715-C52431D417A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D9D5AA6-440A-41C9-A110-D6890E3C5B4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D9D5AA6-440A-41C9-A110-D6890E3C5B4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D9D5AA6-440A-41C9-A110-D6890E3C5B4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D9D5AA6-440A-41C9-A110-D6890E3C5B4F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6D9D5AA6-440A-41C9-A110-D6890E3C5B4F} = {1187CB71-276E-4C40-9450-0A8A6541DAE9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7484FEFB-D694-4365-9B7B-F3D961F42C67}
+	EndGlobalSection
+EndGlobal
